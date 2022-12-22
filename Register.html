@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<style>
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  margin: 10%;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1{
+    color: #19b9ce;
+}
+/* Add padding to containers */
+.Register {
+  padding: 16px;
+  background-color: white;
+  width: 50%;
+  float:right;
+  
+  font-weight: lighter;
+}
+.log-in{
+    padding: 16px;
+ 
+  width: 48%;
+  float:left;
+ border: black;
+  font-weight: lighter;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #19b9ce;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.btn{
+    background-color: #19b9ce;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.btn:hover {background-color: #119cd3}
+
+.btn:active {
+  background-color: #09c7e0;
+  box-shadow: 0 5px rgb(245, 241, 241);
+  transform: translateY(4px);
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+.title1{
+color: black;
+        text-align: center;
+    }
+  /* header */
+  .header{
+  width: 100%;
+  height: 200px;
+  display: block;
+  padding: 20px;
+}
+.leftmenu a {
+  float: left;
+  color: #2C9DB7;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  display: block;
+  width: 95px;
+  height: 25px;
+  margin-right:5px ;
+  border-radius: 40px;
+  border: 1px solid;
+  border-color: #dadada;
+  font-size: 14px;
+}
+.leftmenu a:hover{
+  color: aliceblue;
+ background-color: #2C9DB7;
+
+}
+.logo{
+  width: auto;
+  height: 400px;
+  margin: 0 auto ;
+  content:"";
+   margin-left: -100px;
+   margin-top: 28px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  
+}
+img{
+  max-width:35%;
+  height: auto;
+}
+.cart a {
+  float: right;
+  margin-top: 5px;
+  border-radius: 50%;
+    width: 38px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #666;
+    color: #666;
+    transition:0.3s ease ;
+}
+.cart a:hover{
+  transform: scale(1.2);
+  -webkit-transform:scale(1.2) ;
+  -ms-transform: scale(1.2);
+}
+
+.rightmenu a{
+  float: right;
+  text-align: center;
+ 
+  padding: 15px 50px ;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+ }
+ .rightmenu a:hover{
+   text-decoration: underline;
+ }
+.rightmenu:before {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 1px;
+   margin-right: 170px;
+  background: rgb(117, 114, 114);
+  top: 9%;
+  right:0;
+  position: absolute;
+}
+
+
+</style>
+<html>
+    <body>
+
+  
+        <h1 class="title1"><b>My account</b></h1>
+        <div class="sign">
+     <form>
+
+        <div class="log-in">
+            <h1><b>Login</b></h1>
+            <label for="uname"><i>Username or E-mail address</i></label>
+            <input type="text" name="uname" required>
+      
+            <label for="psw"><i>Password</i></label>
+            <input type="password"  name="psw" required>
+             <br>
+             <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            <br>
+            <button  class="btn"type="submit"><b>Login</b></button>
+            <br>
+            
+            <a href="#">Lost your password?</a>
+          </div>
+     </form>
+
+          <form >
+           
+            <div class="Register">
+                <h1>Register</h1>
+             
+              
+              <label for="Username
+              ">Username</label>
+            <br>
+              <input type="text"  name="Username
+              " id="Username
+              " required>
+          <br>
+              <label for="email">Email</label>
+              <br>
+              <input type="text"  name="email" id="email" required>
+          <br>
+              
+              <label for="psw">Password</label>
+              <br>
+              <input type="password"  name="psw" id="psw" required>
+          <br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Subscribe to our newsletter
+          </label>
+          
+            <div class="container signin">
+              <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our  <a href="#"> privacy policy.</a>.</p>
+            </div>
+            <button type="submit" class="registerbtn"><b>Register</b></button>
+          </form>
+        </div>
+    </div>
+    </body>
+</html>
